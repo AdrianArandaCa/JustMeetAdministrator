@@ -29,13 +29,22 @@ namespace JustMeetAdministrator.Controller
         private void LoadData()
         {
             f.questionDgv.DataSource = repository.GetQuestions();
-            f.questionDgv.Columns["IdGametypeNavigation"].Visible = false;
+            if (f.questionDgv.DataSource != null)
+            {
+                f.questionDgv.Columns["IdGametypeNavigation"].Visible = false;
+            }
             f.answerDgv.DataSource = repository.GetAnswers();
             f.userDgv.DataSource = repository.GetUsers();
-            f.userDgv.Columns["idSettingNavigation"].Visible = false;
-            f.userDgv.Columns["Locations"].Visible = false;
+            if (f.userDgv.DataSource != null) 
+            {
+                f.userDgv.Columns["idSettingNavigation"].Visible = false;
+                f.userDgv.Columns["Locations"].Visible = false;
+            }
             f.settingDgv.DataSource = repository.GetSettings();
-            f.settingDgv.Columns["idGameTypeNavigation"].Visible = false;
+            if (f.settingDgv.DataSource != null) 
+            {
+                f.settingDgv.Columns["idGameTypeNavigation"].Visible = false;
+            }
             f.locationDgv.DataSource = repository.GetLocations();
             f.gameDgv.DataSource = repository.GetGames();
             f.userAnswerDgv.DataSource = repository.GetUserAnswers();

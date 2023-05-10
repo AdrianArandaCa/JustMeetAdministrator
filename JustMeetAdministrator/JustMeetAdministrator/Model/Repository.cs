@@ -10,7 +10,10 @@ namespace JustMeetAdministrator.Model
 {
     public class Repository
     {
-        string ws = "https://172.16.24.123:45455/api/";
+        //string ws = "https://172.16.24.123:45455/api/"; //DISCO HDD
+        //string ws = "https://172.16.24.24:45455/api/"; //DISCO SSD
+        string ws = "https://172.16.24.24:45455/api/";
+
         //Users
         public List<User> GetUsers()
         {
@@ -151,22 +154,11 @@ namespace JustMeetAdministrator.Model
             questionPut = (Question)MakeRequest(string.Concat(ws, "question/", question.idQuestion), question, "PUT", "application/json", typeof(Question));
             return questionPut;
         }
-        public Question PutQuestionAnswerTable(Question question)
-        {
-            Question questionPut = null;
-            questionPut = (Question)MakeRequest(string.Concat(ws, "questionAnswerTable/"), question, "PUT", "application/json", typeof(Question));
-            return questionPut;
-        }
+        
 
         public Boolean DeleteQuestion(int idQuestion)
         {
             Object questionDelete = MakeRequest(string.Concat(ws, "question/", idQuestion),
-                 null, "DELETE", "application/json", typeof(Question));
-            return (questionDelete != null);
-        }
-        public Boolean DeleteQuestionAnswerTable(int idQuestion, int idAnswer)
-        {
-            Object questionDelete = MakeRequest(string.Concat(ws, "questionAnswerTable/", idQuestion,"/", idAnswer),
                  null, "DELETE", "application/json", typeof(Question));
             return (questionDelete != null);
         }
@@ -215,6 +207,26 @@ namespace JustMeetAdministrator.Model
             List<QuestionAnswer> questionsAnswers = null;
             questionsAnswers = (List<QuestionAnswer>)MakeRequest(string.Concat(ws, "questionsAnswers"), null, "GET", "application/json", typeof(List<QuestionAnswer>));
             return questionsAnswers;
+        }
+
+        public QuestionAnswer PostQuestionAnswer(QuestionAnswer questionAnswer)
+        {
+            QuestionAnswer questionPost = null;
+            questionPost = (QuestionAnswer)MakeRequest(string.Concat(ws, "questionAnswer/"), questionAnswer, "POST", "application/json", typeof(QuestionAnswer));
+            return questionPost;
+        }
+        public QuestionAnswer PutQuestionAnswer(QuestionAnswer questionAnswer)
+        {
+            QuestionAnswer questionPut = null;
+            questionPut = (QuestionAnswer)MakeRequest(string.Concat(ws, "questionAnswer/",questionAnswer.idQuestion,"/",questionAnswer.idAnswer,"/"), questionAnswer, "PUT", "application/json", typeof(QuestionAnswer));
+            return questionPut;
+        }
+
+        public Boolean DeleteQuestionAnswer(int idQuestion, int idAnswer)
+        {
+            Object questionDelete = MakeRequest(string.Concat(ws, "questionAnswer/", idQuestion, "/", idAnswer),
+                 null, "DELETE", "application/json", typeof(Question));
+            return (questionDelete != null);
         }
 
         // GameType
