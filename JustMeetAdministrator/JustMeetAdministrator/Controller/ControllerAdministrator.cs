@@ -35,13 +35,13 @@ namespace JustMeetAdministrator.Controller
             }
             f.answerDgv.DataSource = repository.GetAnswers();
             f.userDgv.DataSource = repository.GetUsers();
-            if (f.userDgv.DataSource != null) 
+            if (f.userDgv.DataSource != null)
             {
                 f.userDgv.Columns["idSettingNavigation"].Visible = false;
                 f.userDgv.Columns["Locations"].Visible = false;
             }
             f.settingDgv.DataSource = repository.GetSettings();
-            if (f.settingDgv.DataSource != null) 
+            if (f.settingDgv.DataSource != null)
             {
                 f.settingDgv.Columns["idGameTypeNavigation"].Visible = false;
             }
@@ -50,6 +50,11 @@ namespace JustMeetAdministrator.Controller
             f.userAnswerDgv.DataSource = repository.GetUserAnswers();
             f.gameTypesDgv.DataSource = repository.GetGameTypes();
             f.questionAnswerDgv.DataSource = repository.GetQuestionsAnswers();
+            if (f.questionAnswerDgv.DataSource != null)
+            {
+                f.questionAnswerDgv.Columns["IdAnswerNavigation"].Visible = false;
+                f.questionAnswerDgv.Columns["IdQuestionNavigation"].Visible = false;
+            }
         }
 
         private void InitListeners()
@@ -180,23 +185,22 @@ namespace JustMeetAdministrator.Controller
 
         private void InsertQuestionAnswerButton_Click(object sender, EventArgs e)
         {
-            //int idQuestion;
-            //int idAnswer;
+            int idQuestion;
+            int idAnswer;
 
-            //if (int.TryParse(f.questionAnswerIdQuestionTextBox.Text, out idQuestion) &&
-            //    int.TryParse(f.questionAnswerIdAnswerTextBox.Text, out idAnswer))
-            //{
-            //    Question question = repository.GetQuestion(idQuestion);
-            //    Answer answer = repository.GetAnswer(idAnswer);
-            //    question.IdAnswers.Clear();
-            //    question.IdAnswers.Add(answer);
-            //    repository.PutQuestionAnswerTable(question);
-            //    LoadData();
-            //}
-            //else
-            //{
-            //    MessageSend("Question no modificat, format incorrecte");
-            //}
+            if (int.TryParse(f.questionAnswerIdQuestionTextBox.Text, out idQuestion) &&
+                int.TryParse(f.questionAnswerIdAnswerTextBox.Text, out idAnswer))
+            {
+                Answer answer = repository.GetAnswer(idAnswer);
+                Question question = repository.GetQuestion(idQuestion);
+                QuestionAnswer questionAnswer = new QuestionAnswer(idQuestion, idAnswer, false);
+                repository.PostQuestionAnswer(questionAnswer);
+                LoadData();
+            }
+            else
+            {
+                MessageSend("Question no modificat, format incorrecte");
+            }
         }
 
         private void QuestionAnswerDgv_SelectionChanged(object sender, EventArgs e)
@@ -434,7 +438,7 @@ namespace JustMeetAdministrator.Controller
         private void DeleteSettingButton_Click(object sender, EventArgs e)
         {
             int idSetting;
-            if (int.TryParse(f.idAnswerTextBox.Text, out idSetting))
+            if (int.TryParse(f.idSettingTextBox.Text, out idSetting))
             {
                 repository.DeleteSetting(idSetting);
                 LoadData();
@@ -525,7 +529,7 @@ namespace JustMeetAdministrator.Controller
         private void DeleteUserButton_Click(object sender, EventArgs e)
         {
             int idUser;
-            if (int.TryParse(f.idAnswerTextBox.Text, out idUser))
+            if (int.TryParse(f.idUserTextBox.Text, out idUser))
             {
                 repository.DeleteUser(idUser);
                 LoadData();

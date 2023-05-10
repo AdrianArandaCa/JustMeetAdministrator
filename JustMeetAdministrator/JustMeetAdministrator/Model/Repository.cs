@@ -10,9 +10,8 @@ namespace JustMeetAdministrator.Model
 {
     public class Repository
     {
-        //string ws = "https://172.16.24.123:45455/api/"; //DISCO HDD
-        //string ws = "https://172.16.24.24:45455/api/"; //DISCO SSD
-        string ws = "https://172.16.24.24:45455/api/";
+        //string ws = "https://172.16.24.123:45455/api/"; //DISCO SSD
+        string ws = "https://172.16.24.24:45455/api/"; //DISCO HDD
 
         //Users
         public List<User> GetUsers()
