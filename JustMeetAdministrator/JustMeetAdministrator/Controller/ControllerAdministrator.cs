@@ -119,32 +119,48 @@ namespace JustMeetAdministrator.Controller
             f.idQuestionTextBox.Enabled = false;
             f.idAnswerTextBox.Enabled = false;
             f.idUserTextBox.Enabled = false;
+            f.passwordTextBox.Enabled = false;
             f.idGameTextBox.Enabled = false;
             f.idSettingTextBox.Enabled = false;
+            f.userIdSettingTextBox.Enabled = false;
             f.idLocationTextBox.Enabled = false;
+            f.locationIdUserTextBox.Enabled = false;
             f.idGameTypeTextBox.Enabled = false;
             f.userAnswerIdGameTextBox.Enabled = false;
             f.userAnswerIdUserTextBox.Enabled = false;
             f.userAnswerIdQuestionTextBox.Enabled = false;
+            f.userAnswerIdAnswerTextBox.Enabled = false;
             f.insertUserAnswerButton.Enabled = false;
             f.updateQuestionButton.Enabled = false;
             f.updateAnswerButton.Enabled = false;
             f.updateUserButton.Enabled = false;
             f.updateSettingButton.Enabled = false;
             f.updateLocationButton.Enabled = false;
-            f.updateGameButton.Enabled = false;
+            //f.updateGameButton.Visible = false;
             f.updateGameTypesButton.Enabled = false;
             f.updateQuestionAnswerButton.Enabled = false;
             f.updateUserAnswerButton.Enabled = false;
             f.deleteQuestionButton.Enabled = false;
             f.deleteAnswerButton.Enabled = false;
-            f.deleteUserButton.Enabled = false;
+            //f.deleteUserButton.Enabled = false;
             f.deleteSettingButton.Enabled = false;
             f.deleteLocationButton.Enabled = false;
             f.deleteGameButton.Enabled = false;
             f.deleteGameTypesButton.Enabled = false;
+            f.updateQuestionAnswerButton.Visible = false;
             f.deleteQuestionAnswerButton.Enabled = false;
             f.deleteUserAnswerButton.Enabled = false;
+            //f.deleteUserButton.Visible = false;
+            f.deleteSettingButton.Visible = false;
+            f.deleteLocationButton.Visible = false;
+            f.deleteQuestionAnswerButton.Visible = false;
+            f.insertGameButton.Visible = false;
+            f.deleteGameButton.Visible = false;
+            f.insertUserAnswerButton.Visible = false;
+            f.updateUserAnswerButton.Visible = false;
+            f.deleteUserAnswerButton.Visible = false;
+
+            
         }
 
         private string ConvertPasswordSha256(string inputString)
@@ -319,7 +335,6 @@ namespace JustMeetAdministrator.Controller
         {
             double gamePercentage;
             Game gamePut = repository.GetGame(int.Parse(f.idGameTextBox.Text));
-            gamePut.idGame = 0;
             if (double.TryParse(f.percentageTextBox.Text, out gamePercentage))
             {
                 gamePut.percentage = gamePercentage;
@@ -545,14 +560,14 @@ namespace JustMeetAdministrator.Controller
             int userAge;
             User userPut = repository.GetUser(int.Parse(f.idUserTextBox.Text));
             userPut.name = f.nameTextBox.Text;
-            if (!f.passwordTextBox.Text.Equals(""))
-            {
-                userPut.password = ConvertPasswordSha256(f.passwordTextBox.Text);
-            }
-            else
-            {
-                userPut.password = ConvertPasswordSha256("1234");
-            }
+            //if (!f.passwordTextBox.Text.Equals(""))
+            //{
+            //    userPut.password = ConvertPasswordSha256(f.passwordTextBox.Text);
+            //}
+            //else
+            //{
+            //    userPut.password = ConvertPasswordSha256("1234");
+            //}
             userPut.email = f.emailTextBox.Text;
             userPut.genre = f.userGenreTextBox.Text;
             userPut.description = f.descriptionTextBox.Text;
@@ -575,17 +590,10 @@ namespace JustMeetAdministrator.Controller
             User userPost = new User();
             userPost.idUser = 0;
             userPost.name = f.nameTextBox.Text;
-            if (!f.passwordTextBox.Text.Equals(""))
-            {
-                userPost.password = ConvertPasswordSha256(f.passwordTextBox.Text);
-            }
-            else
-            {
-                userPost.password = ConvertPasswordSha256("1234");
-            }
+            userPost.password = "3ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4";
             userPost.email = f.emailTextBox.Text;
             userPost.genre = f.userGenreTextBox.Text;
-            userPost.photo = 0;
+            userPost.photo = "";
             userPost.description = f.descriptionTextBox.Text;
             userPost.idSettingNavigation = new Setting(0, 10, 18, 30, userPost.genre, null, null);
             if (int.TryParse(f.ageTextBox.Text, out userAge))

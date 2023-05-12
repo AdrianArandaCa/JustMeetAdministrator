@@ -837,6 +837,7 @@
             this.updateUserGameButton.TabIndex = 36;
             this.updateUserGameButton.Text = "Update";
             this.updateUserGameButton.UseVisualStyleBackColor = true;
+            this.updateUserGameButton.Visible = false;
             // 
             // deleteUserGameButton
             // 
@@ -846,6 +847,7 @@
             this.deleteUserGameButton.TabIndex = 35;
             this.deleteUserGameButton.Text = "Delete";
             this.deleteUserGameButton.UseVisualStyleBackColor = true;
+            this.deleteUserGameButton.Visible = false;
             // 
             // insertUserGameButton
             // 
@@ -855,6 +857,7 @@
             this.insertUserGameButton.TabIndex = 34;
             this.insertUserGameButton.Text = "Insert";
             this.insertUserGameButton.UseVisualStyleBackColor = true;
+            this.insertUserGameButton.Visible = false;
             // 
             // userGameDgv
             // 
@@ -867,6 +870,7 @@
             this.userGameDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.userGameDgv.Size = new System.Drawing.Size(237, 272);
             this.userGameDgv.TabIndex = 33;
+            this.userGameDgv.Visible = false;
             // 
             // userGameIdUserTextBox
             // 
@@ -874,6 +878,7 @@
             this.userGameIdUserTextBox.Name = "userGameIdUserTextBox";
             this.userGameIdUserTextBox.Size = new System.Drawing.Size(237, 20);
             this.userGameIdUserTextBox.TabIndex = 32;
+            this.userGameIdUserTextBox.Visible = false;
             // 
             // userGameIdGameTextBox
             // 
@@ -881,6 +886,7 @@
             this.userGameIdGameTextBox.Name = "userGameIdGameTextBox";
             this.userGameIdGameTextBox.Size = new System.Drawing.Size(237, 20);
             this.userGameIdGameTextBox.TabIndex = 31;
+            this.userGameIdGameTextBox.Visible = false;
             // 
             // label4
             // 
@@ -890,6 +896,7 @@
             this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 30;
             this.label4.Text = "idUser";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -899,6 +906,7 @@
             this.label5.Size = new System.Drawing.Size(43, 13);
             this.label5.TabIndex = 29;
             this.label5.Text = "idGame";
+            this.label5.Visible = false;
             // 
             // ageTextBox
             // 

@@ -27,11 +27,23 @@ namespace JustMeetAdministrator.Model
             user = (User)MakeRequest(string.Concat(ws, "user/", id), null, "GET", "application/json", typeof(User));
             return user;
         }
+        
+        public User GetUserByName(string name)
+        {
+            User user = null;
+            user = (User)MakeRequest(string.Concat(ws, "userByName/", name), null, "GET", "application/json", typeof(User));
+            return user;
+        }
 
         public User PostUser(User user)
         {
             User userPost = (User)MakeRequest(string.Concat(ws, "user/"),
                 user, "POST", "application/json", typeof(User));
+            User userLocation = GetUserByName(user.name);
+            if (userLocation != null)
+            {
+                PostLocation(new Location(0, 0.0, 0.0, userLocation.idUser));
+            }
             return userPost;
         }
 
