@@ -217,6 +217,9 @@
             // 
             // gameTypesDgv
             // 
+            this.gameTypesDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gameTypesDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gameTypesDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gameTypesDgv.Location = new System.Drawing.Point(6, 113);
@@ -224,7 +227,7 @@
             this.gameTypesDgv.Name = "gameTypesDgv";
             this.gameTypesDgv.ReadOnly = true;
             this.gameTypesDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.gameTypesDgv.Size = new System.Drawing.Size(237, 316);
+            this.gameTypesDgv.Size = new System.Drawing.Size(1111, 316);
             this.gameTypesDgv.TabIndex = 17;
             // 
             // typeTextBox
@@ -331,6 +334,9 @@
             // 
             // userAnswerDgv
             // 
+            this.userAnswerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userAnswerDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.userAnswerDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.userAnswerDgv.Location = new System.Drawing.Point(473, 154);
@@ -338,7 +344,7 @@
             this.userAnswerDgv.Name = "userAnswerDgv";
             this.userAnswerDgv.ReadOnly = true;
             this.userAnswerDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.userAnswerDgv.Size = new System.Drawing.Size(442, 275);
+            this.userAnswerDgv.Size = new System.Drawing.Size(644, 275);
             this.userAnswerDgv.TabIndex = 31;
             // 
             // userAnswerIdAnswerTextBox
@@ -465,6 +471,8 @@
             // 
             // gameDgv
             // 
+            this.gameDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gameDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gameDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gameDgv.Location = new System.Drawing.Point(6, 154);
@@ -542,6 +550,7 @@
             // 
             // updateLocationButton
             // 
+            this.updateLocationButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.updateLocationButton.Location = new System.Drawing.Point(565, 122);
             this.updateLocationButton.Name = "updateLocationButton";
             this.updateLocationButton.Size = new System.Drawing.Size(75, 23);
@@ -551,6 +560,7 @@
             // 
             // deleteLocationButton
             // 
+            this.deleteLocationButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteLocationButton.Location = new System.Drawing.Point(646, 122);
             this.deleteLocationButton.Name = "deleteLocationButton";
             this.deleteLocationButton.Size = new System.Drawing.Size(75, 23);
@@ -560,6 +570,7 @@
             // 
             // insertLocationButton
             // 
+            this.insertLocationButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.insertLocationButton.Location = new System.Drawing.Point(484, 122);
             this.insertLocationButton.Name = "insertLocationButton";
             this.insertLocationButton.Size = new System.Drawing.Size(75, 23);
@@ -569,6 +580,8 @@
             // 
             // locationDgv
             // 
+            this.locationDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.locationDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.locationDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.locationDgv.Location = new System.Drawing.Point(483, 155);
@@ -576,11 +589,12 @@
             this.locationDgv.Name = "locationDgv";
             this.locationDgv.ReadOnly = true;
             this.locationDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.locationDgv.Size = new System.Drawing.Size(439, 274);
+            this.locationDgv.Size = new System.Drawing.Size(634, 274);
             this.locationDgv.TabIndex = 35;
             // 
             // locationIdUserTextBox
             // 
+            this.locationIdUserTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.locationIdUserTextBox.Location = new System.Drawing.Point(706, 22);
             this.locationIdUserTextBox.Name = "locationIdUserTextBox";
             this.locationIdUserTextBox.Size = new System.Drawing.Size(216, 20);
@@ -588,6 +602,7 @@
             // 
             // longitudTextBox
             // 
+            this.longitudTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.longitudTextBox.Location = new System.Drawing.Point(484, 61);
             this.longitudTextBox.Name = "longitudTextBox";
             this.longitudTextBox.Size = new System.Drawing.Size(216, 20);
@@ -595,6 +610,7 @@
             // 
             // latitudTextBox
             // 
+            this.latitudTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.latitudTextBox.Location = new System.Drawing.Point(484, 100);
             this.latitudTextBox.Name = "latitudTextBox";
             this.latitudTextBox.Size = new System.Drawing.Size(216, 20);
@@ -602,6 +618,7 @@
             // 
             // idLocationTextBox
             // 
+            this.idLocationTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.idLocationTextBox.Location = new System.Drawing.Point(484, 22);
             this.idLocationTextBox.Name = "idLocationTextBox";
             this.idLocationTextBox.Size = new System.Drawing.Size(216, 20);
@@ -609,6 +626,7 @@
             // 
             // label22
             // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(703, 6);
             this.label22.Name = "label22";
@@ -618,6 +636,7 @@
             // 
             // label24
             // 
+            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(481, 45);
             this.label24.Name = "label24";
@@ -627,6 +646,7 @@
             // 
             // label48
             // 
+            this.label48.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label48.AutoSize = true;
             this.label48.Location = new System.Drawing.Point(481, 84);
             this.label48.Name = "label48";
@@ -636,6 +656,7 @@
             // 
             // label49
             // 
+            this.label49.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label49.AutoSize = true;
             this.label49.Location = new System.Drawing.Point(481, 6);
             this.label49.Name = "label49";
@@ -741,6 +762,9 @@
             // 
             // settingDgv
             // 
+            this.settingDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.settingDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.settingDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.settingDgv.Location = new System.Drawing.Point(6, 155);
@@ -861,6 +885,7 @@
             // 
             // userGameDgv
             // 
+            this.userGameDgv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userGameDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.userGameDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.userGameDgv.Location = new System.Drawing.Point(869, 157);
@@ -1063,6 +1088,9 @@
             // 
             // userDgv
             // 
+            this.userDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.userDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.userDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.userDgv.Location = new System.Drawing.Point(6, 157);
@@ -1070,7 +1098,7 @@
             this.userDgv.Name = "userDgv";
             this.userDgv.ReadOnly = true;
             this.userDgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.userDgv.Size = new System.Drawing.Size(811, 272);
+            this.userDgv.Size = new System.Drawing.Size(1100, 272);
             this.userDgv.TabIndex = 17;
             // 
             // label7
@@ -1138,6 +1166,7 @@
             // 
             // updateQuestionAnswerButton
             // 
+            this.updateQuestionAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.updateQuestionAnswerButton.Location = new System.Drawing.Point(517, 127);
             this.updateQuestionAnswerButton.Name = "updateQuestionAnswerButton";
             this.updateQuestionAnswerButton.Size = new System.Drawing.Size(75, 23);
@@ -1147,6 +1176,7 @@
             // 
             // deleteQuestionAnswerButton
             // 
+            this.deleteQuestionAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.deleteQuestionAnswerButton.Location = new System.Drawing.Point(598, 127);
             this.deleteQuestionAnswerButton.Name = "deleteQuestionAnswerButton";
             this.deleteQuestionAnswerButton.Size = new System.Drawing.Size(75, 23);
@@ -1156,6 +1186,7 @@
             // 
             // insertQuestionAnswerButton
             // 
+            this.insertQuestionAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.insertQuestionAnswerButton.Location = new System.Drawing.Point(436, 127);
             this.insertQuestionAnswerButton.Name = "insertQuestionAnswerButton";
             this.insertQuestionAnswerButton.Size = new System.Drawing.Size(75, 23);
@@ -1165,9 +1196,12 @@
             // 
             // questionAnswerDgv
             // 
+            this.questionAnswerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.questionAnswerDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.questionAnswerDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.questionAnswerDgv.Location = new System.Drawing.Point(436, 157);
+            this.questionAnswerDgv.MaximumSize = new System.Drawing.Size(237, 2000);
             this.questionAnswerDgv.MultiSelect = false;
             this.questionAnswerDgv.Name = "questionAnswerDgv";
             this.questionAnswerDgv.ReadOnly = true;
@@ -1177,6 +1211,7 @@
             // 
             // questionAnswerIdAnswerTextBox
             // 
+            this.questionAnswerIdAnswerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.questionAnswerIdAnswerTextBox.Location = new System.Drawing.Point(436, 64);
             this.questionAnswerIdAnswerTextBox.Name = "questionAnswerIdAnswerTextBox";
             this.questionAnswerIdAnswerTextBox.Size = new System.Drawing.Size(216, 20);
@@ -1184,6 +1219,7 @@
             // 
             // questionAnswerIdQuestionTextBox
             // 
+            this.questionAnswerIdQuestionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.questionAnswerIdQuestionTextBox.Location = new System.Drawing.Point(436, 25);
             this.questionAnswerIdQuestionTextBox.Name = "questionAnswerIdQuestionTextBox";
             this.questionAnswerIdQuestionTextBox.Size = new System.Drawing.Size(216, 20);
@@ -1191,14 +1227,16 @@
             // 
             // answerTextBox
             // 
-            this.answerTextBox.Location = new System.Drawing.Point(713, 63);
+            this.answerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.answerTextBox.Location = new System.Drawing.Point(878, 63);
             this.answerTextBox.Name = "answerTextBox";
             this.answerTextBox.Size = new System.Drawing.Size(216, 20);
             this.answerTextBox.TabIndex = 26;
             // 
             // idAnswerTextBox
             // 
-            this.idAnswerTextBox.Location = new System.Drawing.Point(713, 24);
+            this.idAnswerTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.idAnswerTextBox.Location = new System.Drawing.Point(878, 24);
             this.idAnswerTextBox.Name = "idAnswerTextBox";
             this.idAnswerTextBox.Size = new System.Drawing.Size(216, 20);
             this.idAnswerTextBox.TabIndex = 24;
@@ -1226,6 +1264,7 @@
             // 
             // label46
             // 
+            this.label46.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(433, 48);
             this.label46.Name = "label46";
@@ -1235,6 +1274,7 @@
             // 
             // label47
             // 
+            this.label47.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label47.AutoSize = true;
             this.label47.Location = new System.Drawing.Point(433, 9);
             this.label47.Name = "label47";
@@ -1244,7 +1284,8 @@
             // 
             // updateAnswerButton
             // 
-            this.updateAnswerButton.Location = new System.Drawing.Point(792, 127);
+            this.updateAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.updateAnswerButton.Location = new System.Drawing.Point(957, 127);
             this.updateAnswerButton.Name = "updateAnswerButton";
             this.updateAnswerButton.Size = new System.Drawing.Size(75, 23);
             this.updateAnswerButton.TabIndex = 30;
@@ -1253,7 +1294,8 @@
             // 
             // deleteAnswerButton
             // 
-            this.deleteAnswerButton.Location = new System.Drawing.Point(873, 127);
+            this.deleteAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.deleteAnswerButton.Location = new System.Drawing.Point(1038, 127);
             this.deleteAnswerButton.Name = "deleteAnswerButton";
             this.deleteAnswerButton.Size = new System.Drawing.Size(75, 23);
             this.deleteAnswerButton.TabIndex = 29;
@@ -1262,7 +1304,8 @@
             // 
             // insertAnswerButton
             // 
-            this.insertAnswerButton.Location = new System.Drawing.Point(711, 127);
+            this.insertAnswerButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.insertAnswerButton.Location = new System.Drawing.Point(876, 127);
             this.insertAnswerButton.Name = "insertAnswerButton";
             this.insertAnswerButton.Size = new System.Drawing.Size(75, 23);
             this.insertAnswerButton.TabIndex = 28;
@@ -1271,6 +1314,8 @@
             // 
             // answerDgv
             // 
+            this.answerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.answerDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.answerDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.answerDgv.Location = new System.Drawing.Point(713, 157);
@@ -1283,8 +1328,9 @@
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(711, 48);
+            this.label23.Location = new System.Drawing.Point(876, 48);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(42, 13);
             this.label23.TabIndex = 23;
@@ -1292,8 +1338,9 @@
             // 
             // label29
             // 
+            this.label29.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(711, 9);
+            this.label29.Location = new System.Drawing.Point(876, 9);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(50, 13);
             this.label29.TabIndex = 21;
@@ -1328,7 +1375,10 @@
             // 
             // questionDgv
             // 
-            this.questionDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            this.questionDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.questionDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.questionDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.questionDgv.Location = new System.Drawing.Point(6, 157);
             this.questionDgv.MultiSelect = false;
