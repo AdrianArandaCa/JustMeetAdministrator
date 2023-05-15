@@ -101,5 +101,10 @@ namespace JustMeetAdministrator.View
         {
 
         }
+
+        private void tabGamesUserAnswer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
