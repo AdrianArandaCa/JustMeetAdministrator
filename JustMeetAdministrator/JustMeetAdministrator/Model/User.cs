@@ -14,6 +14,7 @@ namespace JustMeetAdministrator.Model
         public string description { get; set; }
         public bool premium { get; set; }
         public int? idSetting { get; set; }
+        public bool? isConnected { get; set; }
         public Setting idSettingNavigation { get; set; }
         public Location Locations { get; set; }
     }

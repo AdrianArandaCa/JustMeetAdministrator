@@ -59,6 +59,8 @@ namespace JustMeetAdministrator.Controller
 
         private void InitListeners()
         {
+            //Reload
+            f.reloadButton.Click += ReloadButton_Click;
             //Question
             f.questionDgv.SelectionChanged += QuestionDgv_SelectionChanged;
             f.insertQuestionButton.Click += InsertQuestionButton_Click;
@@ -112,6 +114,11 @@ namespace JustMeetAdministrator.Controller
             f.insertQuestionAnswerButton.Click += InsertQuestionAnswerButton_Click;
             f.updateQuestionAnswerButton.Click += UpdateQuestionAnswerButton_Click;
             f.deleteQuestionAnswerButton.Click += DeleteQuestionAnswerButton_Click;
+        }
+
+        private void ReloadButton_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
 
         private void DisableComponents()
@@ -580,6 +587,7 @@ namespace JustMeetAdministrator.Controller
                 userPut.birthday = 99;
             }
             userPut.premium = f.premiumCheckBox.Checked;
+            userPut.isConnected = f.connectedCheckBox.Checked;
             repository.PutUser(userPut);
             LoadData();
         }
@@ -593,9 +601,9 @@ namespace JustMeetAdministrator.Controller
             userPost.password = "3ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4";
             userPost.email = f.emailTextBox.Text;
             userPost.genre = f.userGenreTextBox.Text;
-            userPost.photo = "";
+            userPost.photo = "0";
             userPost.description = f.descriptionTextBox.Text;
-            userPost.idSettingNavigation = new Setting(0, 10, 18, 30, userPost.genre, null, null);
+            userPost.idSettingNavigation = new Setting(0, 10, 18, 30, userPost.genre, 2, null);
             if (int.TryParse(f.ageTextBox.Text, out userAge))
             {
                 userPost.birthday = userAge;
@@ -605,6 +613,7 @@ namespace JustMeetAdministrator.Controller
                 userPost.birthday = 99;
             }
             userPost.premium = f.premiumCheckBox.Checked;
+            userPost.isConnected = f.connectedCheckBox.Checked;
             repository.PostUser(userPost);
             LoadData();
 
@@ -625,6 +634,7 @@ namespace JustMeetAdministrator.Controller
             f.userIdSettingTextBox.Text = user.idSetting.ToString();
             f.ageTextBox.Text = user.birthday.ToString();
             f.premiumCheckBox.Checked = user.premium;
+            f.connectedCheckBox.Checked = (bool)user.isConnected;
         }
 
         //Answer
