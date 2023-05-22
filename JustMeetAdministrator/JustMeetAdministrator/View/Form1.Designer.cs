@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle26 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle27 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabGameTypes = new System.Windows.Forms.TabPage();
             this.updateGameTypesButton = new System.Windows.Forms.Button();
             this.deleteGameTypesButton = new System.Windows.Forms.Button();
@@ -103,6 +103,8 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.tabUserUserGame = new System.Windows.Forms.TabPage();
+            this.connectedCheckBox = new System.Windows.Forms.CheckBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.premiumCheckBox = new System.Windows.Forms.CheckBox();
             this.updateUserGameButton = new System.Windows.Forms.Button();
             this.deleteUserGameButton = new System.Windows.Forms.Button();
@@ -164,8 +166,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.connectedCheckBox = new System.Windows.Forms.CheckBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.reloadButton = new System.Windows.Forms.Button();
             this.tabGameTypes.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gameTypesDgv)).BeginInit();
@@ -244,10 +244,10 @@
             // 
             // gameTypesDgv
             // 
-            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.Black;
-            this.gameTypesDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle21;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            this.gameTypesDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.gameTypesDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -388,10 +388,10 @@
             // 
             // userAnswerDgv
             // 
-            dataGridViewCellStyle22.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle22.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle22.SelectionForeColor = System.Drawing.Color.Black;
-            this.userAnswerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle22;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            this.userAnswerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle2;
             this.userAnswerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -559,10 +559,10 @@
             // 
             // gameDgv
             // 
-            dataGridViewCellStyle23.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle23.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle23.SelectionForeColor = System.Drawing.Color.Black;
-            this.gameDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle23;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            this.gameDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.gameDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.gameDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -693,10 +693,10 @@
             // 
             // locationDgv
             // 
-            dataGridViewCellStyle24.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle24.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle24.SelectionForeColor = System.Drawing.Color.Black;
-            this.locationDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle24;
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            this.locationDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.locationDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.locationDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -923,10 +923,10 @@
             // 
             // settingDgv
             // 
-            dataGridViewCellStyle25.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.Color.Black;
-            this.settingDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle25;
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.settingDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.settingDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1023,8 +1023,30 @@
             this.tabUserUserGame.Padding = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.tabUserUserGame.Size = new System.Drawing.Size(1547, 583);
             this.tabUserUserGame.TabIndex = 2;
-            this.tabUserUserGame.Text = "User/UserGame";
+            this.tabUserUserGame.Text = "Users";
             this.tabUserUserGame.UseVisualStyleBackColor = true;
+            // 
+            // connectedCheckBox
+            // 
+            this.connectedCheckBox.AutoSize = true;
+            this.connectedCheckBox.Location = new System.Drawing.Point(786, 63);
+            this.connectedCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.connectedCheckBox.Name = "connectedCheckBox";
+            this.connectedCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.connectedCheckBox.TabIndex = 39;
+            this.connectedCheckBox.UseVisualStyleBackColor = true;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(783, 47);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(68, 13);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Connected";
             // 
             // premiumCheckBox
             // 
@@ -1080,10 +1102,10 @@
             // 
             // userGameDgv
             // 
-            dataGridViewCellStyle26.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle26.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle26.SelectionForeColor = System.Drawing.Color.Black;
-            this.userGameDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle26;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            this.userGameDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.userGameDgv.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.userGameDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.userGameDgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -1341,10 +1363,10 @@
             // 
             // userDgv
             // 
-            dataGridViewCellStyle27.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle27.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle27.SelectionForeColor = System.Drawing.Color.Black;
-            this.userDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle27;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            this.userDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.userDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1480,10 +1502,10 @@
             // 
             // questionAnswerDgv
             // 
-            dataGridViewCellStyle28.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.Color.Black;
-            this.questionAnswerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            this.questionAnswerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
             this.questionAnswerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.questionAnswerDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -1632,10 +1654,10 @@
             // 
             // answerDgv
             // 
-            dataGridViewCellStyle29.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.Color.Black;
-            this.answerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            this.answerDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.answerDgv.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.answerDgv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -1721,10 +1743,10 @@
             // 
             // questionDgv
             // 
-            dataGridViewCellStyle30.ForeColor = System.Drawing.Color.Transparent;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.Color.Black;
-            this.questionDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            this.questionDgv.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
             this.questionDgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -1808,28 +1830,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
-            // 
-            // connectedCheckBox
-            // 
-            this.connectedCheckBox.AutoSize = true;
-            this.connectedCheckBox.Location = new System.Drawing.Point(786, 63);
-            this.connectedCheckBox.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.connectedCheckBox.Name = "connectedCheckBox";
-            this.connectedCheckBox.Size = new System.Drawing.Size(15, 14);
-            this.connectedCheckBox.TabIndex = 39;
-            this.connectedCheckBox.UseVisualStyleBackColor = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(783, 47);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 13);
-            this.label6.TabIndex = 38;
-            this.label6.Text = "Connected";
             // 
             // reloadButton
             // 
