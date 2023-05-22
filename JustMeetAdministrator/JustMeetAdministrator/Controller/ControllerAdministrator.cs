@@ -403,12 +403,12 @@ namespace JustMeetAdministrator.Controller
         private void UpdateLocationButton_Click(object sender, EventArgs e)
         {
             int locationIdUser;
-            int locationLatitud;
-            int locationLongitud;
+            double locationLatitud;
+            double locationLongitud;
             Location locationPut = repository.GetLocation(int.Parse(f.idLocationTextBox.Text));
             if (int.TryParse(f.locationIdUserTextBox.Text, out locationIdUser) &&
-                int.TryParse(f.latitudTextBox.Text, out locationLatitud) &&
-                int.TryParse(f.longitudTextBox.Text, out locationLongitud))
+                double.TryParse(f.latitudTextBox.Text, out locationLatitud) &&
+                double.TryParse(f.longitudTextBox.Text, out locationLongitud))
             {
                 locationPut.idUser = locationIdUser;
                 locationPut.longitud = locationLongitud;
