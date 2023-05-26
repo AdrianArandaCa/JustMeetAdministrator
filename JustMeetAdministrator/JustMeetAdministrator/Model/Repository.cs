@@ -18,6 +18,7 @@ namespace JustMeetAdministrator.Model
         {
             List<User> users = null;
             users = (List<User>)MakeRequest(string.Concat(ws, "users"), null, "GET", "application/json", typeof(List<User>));
+            users = users.OrderBy(a=>a.name).ToList();
             return users;
         }
 
@@ -142,6 +143,7 @@ namespace JustMeetAdministrator.Model
         {
             List<Question> questions = null;
             questions = (List<Question>)MakeRequest(string.Concat(ws, "questions"), null, "GET", "application/json", typeof(List<Question>));
+            //questions = questions.OrderBy(a => a.question1).ToList();
             return questions;
         }
 
@@ -180,6 +182,7 @@ namespace JustMeetAdministrator.Model
         {
             List<Answer> answers = null;
             answers = (List<Answer>)MakeRequest(string.Concat(ws, "answers"), null, "GET", "application/json", typeof(List<Answer>));
+            //answers = answers.OrderBy(a => a.answer1).ToList();
             return answers;
         }
 
@@ -222,8 +225,7 @@ namespace JustMeetAdministrator.Model
 
         public QuestionAnswer PostQuestionAnswer(QuestionAnswer questionAnswer)
         {
-            QuestionAnswer questionPost = null;
-            questionPost = (QuestionAnswer)MakeRequest(string.Concat(ws, "questionAnswer/"), questionAnswer, "POST", "application/json", typeof(QuestionAnswer));
+            QuestionAnswer questionPost = (QuestionAnswer)MakeRequest(string.Concat(ws, "questionAnswer/"), questionAnswer, "POST", "application/json", typeof(QuestionAnswer));
             return questionPost;
         }
         public QuestionAnswer PutQuestionAnswer(QuestionAnswer questionAnswer)
@@ -246,6 +248,7 @@ namespace JustMeetAdministrator.Model
         {
             List<GameType> gameTypes = null;
             gameTypes = (List<GameType>)MakeRequest(string.Concat(ws, "gameTypes"), null, "GET", "application/json", typeof(List<GameType>));
+            gameTypes = gameTypes.OrderBy(a=>a.type).ToList();
             return gameTypes;
         }
 

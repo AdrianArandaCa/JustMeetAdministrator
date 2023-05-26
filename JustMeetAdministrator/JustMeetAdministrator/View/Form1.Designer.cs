@@ -1471,6 +1471,7 @@
             this.updateQuestionAnswerButton.TabIndex = 38;
             this.updateQuestionAnswerButton.Text = "Update";
             this.updateQuestionAnswerButton.UseVisualStyleBackColor = true;
+            this.updateQuestionAnswerButton.Click += new System.EventHandler(this.updateQuestionAnswerButton_Click);
             // 
             // deleteQuestionAnswerButton
             // 

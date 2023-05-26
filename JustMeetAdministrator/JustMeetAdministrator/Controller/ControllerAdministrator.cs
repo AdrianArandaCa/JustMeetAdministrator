@@ -231,7 +231,7 @@ namespace JustMeetAdministrator.Controller
             QuestionAnswer questionAnswer = f.questionAnswerDgv.CurrentRow.DataBoundItem as QuestionAnswer;
             f.updateQuestionAnswerButton.Enabled = true;
             f.deleteQuestionAnswerButton.Enabled = true;
-            f.questionAnswerIdAnswerTextBox.Text = questionAnswer.idAnswer.ToString();
+            //f.questionAnswerIdAnswerTextBox.Text = questionAnswer.idAnswer.ToString();
         }
 
         //GameType

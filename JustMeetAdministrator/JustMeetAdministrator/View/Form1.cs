@@ -106,5 +106,10 @@ namespace JustMeetAdministrator.View
         {
 
         }
+
+        private void updateQuestionAnswerButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
